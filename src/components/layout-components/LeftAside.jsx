@@ -1,3 +1,4 @@
+import './leftAside.css'
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -16,7 +17,7 @@ const LeftAside = () => {
                 {
                     categories.map((category) => <NavLink
                         to={`/category/${category.category_id}`}
-                        className="btn" key={category.category_id}>{category.category_name}</NavLink>)
+                        className={({ isActive }) => `btn ${isActive ? 'active' : ''}`} key={category.category_id}>{category.category_name}</NavLink>)
                 }
             </div>
         </div>
