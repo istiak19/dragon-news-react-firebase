@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Latest from "../components/Latest";
 import LeftAside from "../components/layout-components/LeftAside";
+import RightAside from "../components/layout-components/RightAside";
 import Navbar from "../components/Navbar";
 
 const HomeLayout = () => {
@@ -20,7 +21,9 @@ const HomeLayout = () => {
                     <LeftAside></LeftAside>
                 </aside>
                 <main className="col-span-6">Content</main>
-                <aside className="col-span-3">Right</aside>
+                <aside className="col-span-3">
+                    <RightAside></RightAside>
+                </aside>
             </main>
         </div>
     );
